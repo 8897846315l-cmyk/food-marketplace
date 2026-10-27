@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodCart | Fresh Meals Delivered Fast</title>
+    <meta
+      name="description"
+      content="Amazon-inspired food marketplace with delicious dishes, fast delivery, and easy ordering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="logo">FoodCart</div>
+        </div>
+
+        <label class="search-box" aria-label="Search food items">
+          <span>🔍</span>
+          <input type="text" placeholder="Search food, snacks, meals..." />
+        </label>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#">Sign In</a>
+          <a href="#">Returns</a>
+          <a href="#">Cart <span id="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="subnav">
+      <div class="container subnav-inner">
+        <span>All</span>
+        <span>Fast Food</span>
+        <span>Healthy Meals</span>
+        <span>Pizza</span>
+        <span>Biryanis</span>
+        <span>Deserts</span>
+        <span>Drinks</span>
+      </div>
+    </div>
+
+    <main class="container app-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Fresh • Fast • Flavorful</span>
+          <h1>Order delicious meals from your favorite kitchen.</h1>
+          <p>
+            Explore chef-made dishes, healthy bowls, snacks, desserts and family meals —
+            delivered hot to your door in minutes.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button">Shop now</button>
+            <button class="secondary-button">View deals</button>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>20k+</strong><span>Orders</span></li>
+            <li><strong>4.8/5</strong><span>Rating</span></li>
+            <li><strong>15 min</strong><span>Avg. delivery</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+            alt="Assorted delicious meals"
+          />
+          <div class="hero-card-badge">Chef's special</div>
+        </div>
+      </section>
+
+      <section class="category-strip">
+        <div class="category"><span>🍔</span><p>Burgers</p></div>
+        <div class="category"><span>🍕</span><p>Pizza</p></div>
+        <div class="category"><span>🥗</span><p>Healthy</p></div>
+        <div class="category"><span>🍣</span><p>Sushi</p></div>
+        <div class="category"><span>🍰</span><p>Desserts</p></div>
+        <div class="category"><span>🥤</span><p>Drinks</p></div>
+      </section>
+
+      <section class="content-grid">
+        <div class="catalog">
+          <div class="section-heading">
+            <h2>Popular food items</h2>
+            <a href="#">See all</a>
+          </div>
+
+          <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        </div>
+
+        <aside class="cart-panel" aria-label="Your order summary">
+          <div class="order-card">
+            <h3>Your cart</h3>
+            <div id="cart-items" class="cart-items">
+              <p class="empty-state">Your cart is empty.</p>
+            </div>
+
+            <div class="totals">
+              <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+              <div><span>Delivery</span><strong id="delivery">$0.00</strong></div>
+              <div><span>Tax</span><strong id="tax">$0.00</strong></div>
+              <div class="grand-total"><span>Total</span><strong id="total">$0.00</strong></div>
+            </div>
+
+            <button class="checkout-button">Proceed to checkout</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
